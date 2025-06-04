@@ -1,5 +1,7 @@
 # AWS Step Functions: Handling Contextual Messages in Serverless Architectures
 
+See full article here: [https://blog.devops.dev/handling-contextual-messages-in-serverless-architectures-ecbf3ef731b1](https://blog.devops.dev/handling-contextual-messages-in-serverless-architectures-ecbf3ef731b1)
+
 In modern serverless applications—particularly those interacting with messaging platforms like Telegram,  WhatsApp—messages, Instagram, and other often arrive individually, without any native session or context. While this fits well with AWS Lambda's stateless execution model, it introduces a fundamental challenge: how to maintain context across messages.
 
 For instance, a user might send multiple sequential messages that together represent a single intent or session. Without orchestration, each message might trigger its own Lambda execution, causing the system to respond prematurely or without full context.
